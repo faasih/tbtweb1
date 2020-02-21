@@ -11,16 +11,159 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<!--   <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet"> -->
+	<link rel="stylesheet" href="dist/css/bootstrap.min.css">
 
 	<style type="text/css">
 
-	
+		@media only screen and (min-width: 375px) {
+			
+
+			img{
+				margin-left: 6.95% !important;
+			}
+
+		}
+
+		@media only screen and (min-width: 425px) {
+			
+
+			img{
+				margin-left: 11.95% !important;
+			}
+
+		}
+
+
+		@media only screen and (min-width: 544px) { 
+			
+
+		}
+		@media only screen and (min-width: 768px) {
+			
+			.paragraph {
+				
+				padding: 15px 0 15px 0 !important;
+				font-size: 25px !important;
+				line-height: normal !important;
+			}
+			img {
+				margin-left: 16.95% !important;
+			}
+		}
+		@media only screen and (min-width: 992px) {
+			
+
+		}
+		@media only screen and (min-width: 1024px) { 
+			
+			.navbar-nav {
+				margin-left: 37%;
+			}
+
+			.navbar-expand-lg .navbar-nav .nav-link {
+				padding-right: 1.5rem;
+				padding-left: 2.5rem;
+			}
+			.paragraph {
+				padding: 20px 15px 15px 15px !important;
+				font-size: 25px !important;
+				line-height: normal !important;
+			}
+
+			img{
+				margin-left: 1% !important;
+				width: 500px !important;
+				height: 360px !important			;
+			}
+
+		}
+
+		@media only screen and (min-width: 1440px){
+			.navbar-nav {
+				margin-left: 50%;
+			}
+
+			.navbar-expand-lg .navbar-nav .nav-link {
+				padding-right: 1.5rem;
+				padding-left: 3.5rem;
+			}
+
+			.navbar-light .navbar-brand {
+				
+				font-size: 50px;
+				margin-left: 28px;
+			}
+
+			img {
+				margin-left: -4% !important;
+				width: 500px !important;
+				height: 400px !important;
+			}
+
+			.paragraph{
+				padding: 20px 15px 15px 15px !important;
+				font-size: 30px !important;
+				font-weight: 500;
+				line-height: normal !important;
+			}
+
+		}
+
+		@media only screen and (min-width: 2560px){
+
+			.navbar {
+				height: 150px;
+
+			}
+
+			.nav-item a {
+				font-size: 50px !important;
+				color: white;
+			}
+
+			.navbar-light .navbar-brand {
+				color: white;
+				font-size: 70px;
+				margin-left: 50px;
+			}
+
+
+			.navbar-nav {
+				margin-left: 46%;
+			}
+
+			.navbar-expand-lg .navbar-nav .nav-link {
+				padding-right: 1.5rem;
+				padding-left: 5.5rem;
+			}
+			
+
+			img {
+				margin-left: 1% !important;
+				width: 750px !important;
+				height: 600px !important;
+				margin-top: 150px !important;
+			}
+
+
+			.paragraph{
+				padding: 25px 20px 20px 25px !important;
+				font-size: 50px !important;
+				font-weight: 500;
+				line-height: normal !important;
+			}
+
+		}
+
+		/*MEDIA QUERIEES END HERE*/
+
+		
 
 		.navbar{
-			background-color: #e9ecef;
+			background-color: #fbfbfb;
 			font-weight: 900;
-			color: #00B354;
+			color: ;
 		}
 
 		.navbar-brand{
@@ -37,7 +180,7 @@
 
 		.nav-item a{
 			font-size: 20px;
-			color: #00B354;
+			color: white;
 		}
 
 		.display-1 {
@@ -47,32 +190,47 @@
 		}
 
 		.navbar-light .navbar-brand {
-    color: #00B354;
-}
+			color: #00B354;
+		}
 
-.navbar-light .navbar-nav .active>.nav-link {
-        color: color: gray;
-}
+		.navbar-light .navbar-nav .active>.nav-link {
+			color: color: gray;
+		}
 
 
-.navbar-light .navbar-nav .nav-link {
-    /* color: rgba(0,0,0,.5); */
-    color: #00B345;
-}
+		.navbar-light .navbar-nav .nav-link {
+			/* color: rgba(0,0,0,.5); */
+			color: #00B354;
+		}
 
-    body{
+		body{
 
-      font-family: 'Bebas Neue', cursive;
+			font-family: Calibri;
 
-    }
+		}
 
-    .paragraph{
-      text-align: center;
-      padding: 5px;
-      font-size: 30px;
-      border: 1px solid white; 
+		.paragraph{
+			text-align: center;
+			padding: 15px 20px 10px 20px;
+			font-size: 20px;
+			line-height: normal;
+			font-weight: 500; 
 
-    }
+		}
+
+		.jumbotron {
+			background-color: white;
+		}
+
+		.navbar-light .navbar-toggler {
+
+			border-color: none;
+
+		}
+		.navbar-light .navbar-toggler-icon{
+			width: 20px;
+			height: 20px;
+		}
 
 	</style>
 
@@ -85,19 +243,19 @@
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
-			<ul class="navbar-nav">
+			<ul class="navbar-nav text-uppercase">
 				<li class="nav-item active">
 					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Features</a>
+					<a class="nav-link" href="#">Page</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Pricing</a>
+					<a class="nav-link" href="#">Page</a>
 				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Dropdown link
+						Page
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 						<a class="dropdown-item" href="#">Action</a>
@@ -109,52 +267,50 @@
 		</div>
 	</nav>
 
-	  <div class="jumbotron">
+	<div class="jumbotron">
 
-    <div class="row">
+		<div class="row">
 
-      <div class=" col-sm-2 col-md-2 col-lg-3 col-xl-4">
-      </div>
-
-
-      <div class="col col-sm-8 col-md-8 col-lg-6 col-xl-6">
-        <img class="img-fluid" src="aboutImg.png" alt="About Team" style="
-        width: 500px;
-        height: 360px;
-        ">
-      </div>
+			<div class=" col-sm-2 col-md-2 col-lg-3 col-xl-4">
+			</div>
 
 
-      <div class=" col-sm-2 col-md-3 col-lg-3 ">
-      </div>
+			<div class="col col-sm-8 col-md-8 col-lg-6 
+			">
+			<img class="img-fluid" src="aboutImg.png" alt="About Team" style="width: 300px;height: 260px;margin-top: 50px;margin-left: 1.95%;">
+		</div>
 
-    </div>
 
-    <div class="row">
+		<div class=" col-sm-2 col-md-3 col-lg-3 ">
+		</div>
 
-      <div class="col-sm-8 col-md-2 col-lg-2 col-xl-2">
-      </div>
+	</div>
 
-      <div class="col col-sm-4 col-md-8 col-lg-8 col-xl-9">
-        <div class="paragraph">
-          <p>Originating in July 2017, The Brainiac Trend has always been
-            confident in the work we produced. For The Brainiac Trend
-            has left no stone unturned in accumulating the best team
-            that works devotedly from their heart to produce true and
-          outstanding results while also catering to the Clients every need.</p>
+	<div class="row">
 
-        </div>
-      </div>
-      <div class="col-sm-2 col-md-3 col-lg-2">
-      </div>
+		<div class="col-sm-8 col-md-2 col-lg-2 col-xl-2">
+		</div>
 
-    </div>
+		<div class="col col-sm-4 col-md-8 col-lg-8 col-xl-8">
+			<div class="paragraph">
+				<p>Originating in July 2017, The Brainiac Trend has always been
+					confident in the work we produced. For The Brainiac Trend
+					has left no stone unturned in accumulating the best team
+					that works devotedly from their heart to produce true and
+				outstanding results while also catering to the Clients every need.</p>
 
-  </div>
+			</div>
+		</div>
+		<div class="col-sm-2 col-md-3 col-lg-2">
+		</div>
+
+	</div>
+
+</div>
 
 
 
 
 
-  </body>
+</body>
 </html>
